@@ -9,20 +9,30 @@
             margin-top: 10%;
             border: 1px solid black;
             padding-bottom: 10%;
-            background-color: rgb(93, 95, 94);
             width:20%;
             height:500px;
-            margin-left: 30%;
+            margin-left: 40%;
             margin-bottom: 10%;
             padding-left: 5%;
+            box-shadow: opx 5px 30px black;
+            border-radius: 10px;
+            background-color: aliceblue;
            
         }
         div{
             padding:1px;
         }
+        body{
+            background-image: url(bg.png);
+            width:100vw;
+            height:100vh;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            backdrop-filter: blur(3px);
+        }
     </style>
 </head>
-<body style="background-color: rgb(6, 6, 6);">
+<body>
     <form>
         <div class="main">
         <h1>Registration Form</h1>
@@ -30,27 +40,27 @@
         <br>
         <label for="username">Username:</label>
         <br>
-        <input type="text" id="username" value="" name="uname">
+        <input type="text" id="username" value="" name="uname" required>
         <br>
         
         <label for="password">Password: </label>
         <br>
-        <input type="password" id="password" value="" name="password">
+        <input type="password" id="password" value="" name="password" required>
         <br>
         <label for="password">Re-entry Password: </label>
         <br>
-        <input type="text" id="password" value="" name="password">
+        <input type="text" id="password" value="" name="password" required>
         <br>
         <label for="date">Date of Birth:</label>
         <br>
 
-        <input type="date" id="date" name="date">
+        <input type="date" id="date" name="date" required>
         <br>
         <label for="email">E-mail:</label>
         <br>
-        <input type="email" id="email" name="email" placeholder="someone@gmail"><br>
+        <input type="email" id="email" name="email" placeholder="someone@gmail" required><br>
         <label for="phone">Phone No:</label><br>
-        <input type="tel:" id="phone" name="phone" placeholder="+919014583641">
+        <input type="tel:" id="phone" name="phone" placeholder="+919014583641" required>
         <br>
         <div>
         <h4>Gender</h4>
